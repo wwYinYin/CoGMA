@@ -10,3 +10,6 @@ pip install torch==2.5.1+cu124 xformers --index-url https://download.pytorch.org
 cd InfantAnimator
 pip install -r requirements.txt
 ```
+### Download weights
+Please download weights manually from [FrancisRing/StableAnimator](https://huggingface.co/FrancisRing/StableAnimator) and [wwYinYin/InfantAnimator](https://huggingface.co/wwYinYin/InfantAnimator)
+
