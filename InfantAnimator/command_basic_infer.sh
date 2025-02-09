@@ -1,0 +1,18 @@
+CUDA_VISIBLE_DEVICES=0 python inference_basic.py \
+ --pretrained_model_name_or_path="./checkpoints/SVD/" \
+ --output_dir="./outputs/" \
+ --validation_control_folder="./assets/testdata/poses" \
+ --validation_image="./assets/testdata/reference.png" \
+ --width=576 \
+ --height=1024 \
+ --guidance_scale=3.0 \
+ --num_inference_steps=25 \
+ --posenet_model_name_or_path="./checkpoints/Animation/checkpoint-26500/pose_net-26500.pth" \
+ --face_encoder_model_name_or_path="./checkpoints/Animation/checkpoint-26500/face_encoder-26500.pth" \
+ --unet_model_name_or_path="./checkpoints/Animation/checkpoint-26500/unet-26500.pth" \
+ --tile_size=16 \
+ --overlap=4 \
+ --noise_aug_strength=0.02 \
+ --frames_overlap=4 \
+ --decode_chunk_size=4 \
+ --gradient_checkpointing
