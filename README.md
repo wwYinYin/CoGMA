@@ -48,3 +48,9 @@ InfantAnimator/
 ├── face_mask_extraction_multi.py
 ├── inference_basic.py
 ├── requirement.txt
+```
+### Model inference
+A sample configuration for testing is provided as command_basic_infer.sh. You can also easily modify the various configurations according to your needs.
+```
+bash command_basic_infer.sh
+```
