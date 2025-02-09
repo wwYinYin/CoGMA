@@ -4,9 +4,9 @@ General movement assessment (GMA) is a non-invasive method used to evaluate neur
 ## InfantAnimator Quickstart
 For the released model checkpoint, it supports generating videos at a 576x1024 resolution.
 ### Environment setup
-'''
+```
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
 pip install torch==2.5.1+cu124 xformers --index-url https://download.pytorch.org/whl/cu124
 cd InfantAnimator
 pip install -r requirements.txt
-'''
+```
