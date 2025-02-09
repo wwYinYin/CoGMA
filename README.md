@@ -12,4 +12,39 @@ pip install -r requirements.txt
 ```
 ### Download weights
 Please download weights manually from [FrancisRing/StableAnimator](https://huggingface.co/FrancisRing/StableAnimator) and [wwYinYin/InfantAnimator](https://huggingface.co/wwYinYin/InfantAnimator)
-
+All the weights should be organized in models as follows The overall file structure of this project should be organized as follows:
+```
+InfantAnimator/
+├── DWPose
+├── animation
+├── checkpoints
+│   ├── DWPose
+│   │   ├── dw-ll_ucoco_384.onnx
+│   │   └── yolox_l.onnx
+│   ├── Animation
+│   │   └── checkpoint-26500
+│   │       ├── pose_net-26500.pth
+│   │       ├── face_encoder-26500.pth
+│   │       └── unet-26500.pth
+│   ├── SVD
+│   │   ├── feature_extractor
+│   │   ├── image_encoder
+│   │   ├── scheduler
+│   │   ├── unet
+│   │   ├── vae
+│   │   ├── model_index.json
+│   │   ├── svd_xt.safetensors
+│   │   └── svd_xt_image_decoder.safetensors
+│   └── inference.zip
+├── models
+│   │   └── antelopev2
+│   │       ├── 1k3d68.onnx
+│   │       ├── 2d106det.onnx
+│   │       ├── genderage.onnx
+│   │       ├── glintr100.onnx
+│   │       └── scrfd_10g_bnkps.onnx
+├── command_basic_infer.sh
+├── face_mask_extraction.py
+├── face_mask_extraction_multi.py
+├── inference_basic.py
+├── requirement.txt
